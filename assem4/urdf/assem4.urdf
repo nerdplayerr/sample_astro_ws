@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="assem4">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00097158991392642 0.141238649004559 9.0616641219611E-07"
+        rpy="0 0 0" />
+      <mass
+        value="6.18799139893662" />
+      <inertia
+        ixx="0.190975821617679"
+        ixy="4.01901385521376E-08"
+        ixz="-5.59571623095739E-08"
+        iyy="0.328722262102599"
+        iyz="1.23706839134612E-07"
+        izz="0.190967615693658" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem4/meshes/base.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.909803921568627 0.443137254901961 0.0313725490196078 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem4/meshes/base.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="roda_1">
+    <inertial>
+      <origin
+        xyz="-0.00298916024684914 -0.0001283245750679 0.00267056079431363"
+        rpy="0 0 0" />
+      <mass
+        value="0.203046400875564" />
+      <inertia
+        ixx="7.56869067967059E-05"
+        ixy="3.42686548790493E-12"
+        ixz="-2.28309050451303E-05"
+        iyy="5.28560065572393E-05"
+        iyz="-3.42686550235183E-12"
+        izz="7.56869164080333E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem4/meshes/roda_1.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem4/meshes/roda_1.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="roda1"
+    type="continuous">
+    <origin
+      xyz="0.17117 0.17085 0.0028922"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="roda_1" />
+    <axis
+      xyz="0.70711 0 -0.70711" />
+  </joint>
+  <link
+    name="roda_2">
+    <inertial>
+      <origin
+        xyz="-0.000184015036079982 -2.34095917507021E-05 0.000181148183766827"
+        rpy="0 0 0" />
+      <mass
+        value="0.203046400875564" />
+      <inertia
+        ixx="7.56869054486599E-05"
+        ixy="2.08742362905975E-12"
+        ixz="2.28309050452597E-05"
+        iyy="5.28560065569803E-05"
+        iyz="2.08742362598843E-12"
+        izz="7.56869177558201E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem4/meshes/roda_2.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem4/meshes/roda_2.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="roda2"
+    type="continuous">
+    <origin
+      xyz="-0.17083 0.17119 0.0027873"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="roda_2" />
+    <axis
+      xyz="-0.70711 0 -0.70711" />
+  </joint>
+  <link
+    name="roda_3">
+    <inertial>
+      <origin
+        xyz="0.00301005381289868 -1.40647783379586E-05 -0.00264393355456624"
+        rpy="0 0 0" />
+      <mass
+        value="0.203046400875564" />
+      <inertia
+        ixx="7.56869047908363E-05"
+        ixy="-3.0658083767716E-13"
+        ixz="-2.28309050453912E-05"
+        iyy="5.28560065567172E-05"
+        iyz="3.06580804252446E-13"
+        izz="7.56869184133806E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem4/meshes/roda_3.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem4/meshes/roda_3.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="roda3"
+    type="continuous">
+    <origin
+      xyz="-0.17119 -0.17083 0.0027779"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="roda_3" />
+    <axis
+      xyz="-0.70711 0 0.70711" />
+  </joint>
+  <link
+    name="roda_4">
+    <inertial>
+      <origin
+        xyz="-0.00268642055638552 0.00016146222194244 -0.00297330049881628"
+        rpy="0 0 0" />
+      <mass
+        value="0.203046400875564" />
+      <inertia
+        ixx="7.56869148915296E-05"
+        ixy="4.22773772736424E-12"
+        ixz="2.28309050446226E-05"
+        iyy="5.28560065565497E-05"
+        iyz="4.22851165936016E-12"
+        izz="7.56869083109736E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem4/meshes/roda_4.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://assem4/meshes/roda_4.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="roda4"
+    type="continuous">
+    <origin
+      xyz="0.170865182081803 -0.171152061860908 0.0026023881812039"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="roda_4" />
+    <axis
+      xyz="0.707106781186548 0 0.707106781186547" />
+  </joint>
+</robot>

@@ -1,0 +1,10 @@
+digraph G {
+"base_link" -> "Roda_1"[label=" Broadcaster: default_authority\nAverage rate: 10.196\nBuffer length: 5.1\nMost recent transform: 1717406008.941427\nOldest transform: 1717406003.84149\n"];
+"base_link" -> "Roda_2"[label=" Broadcaster: default_authority\nAverage rate: 10.196\nBuffer length: 5.1\nMost recent transform: 1717406008.941427\nOldest transform: 1717406003.84149\n"];
+"base_link" -> "Roda_3"[label=" Broadcaster: default_authority\nAverage rate: 10.196\nBuffer length: 5.1\nMost recent transform: 1717406008.941427\nOldest transform: 1717406003.84149\n"];
+"base_link" -> "Roda_4"[label=" Broadcaster: default_authority\nAverage rate: 10.196\nBuffer length: 5.1\nMost recent transform: 1717406008.941427\nOldest transform: 1717406003.84149\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1717406008.9608245"[ shape=plaintext ] ;
+}->"base_link";
+}
